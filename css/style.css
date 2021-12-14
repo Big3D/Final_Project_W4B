@@ -1,0 +1,94 @@
+.LogoText{
+    text-align: center;
+    font-family: 'Keania One', cursive;
+    font-size: 45px;
+}
+.WelcomeText{
+    /* font-family: 'Medula One', cursive; */
+    font-family: 'Yatra One', cursive;
+    font-size: 20px;
+}
+
+.navbar{
+    overflow: hidden;
+    position: sticky;
+    position: -webkit-sticky;
+    height: 50px;
+    top: 0px;
+    width: 100%;
+    border: 3px solid rgb(7, 216, 7);
+    background-color: white;
+}
+
+.navbar a{
+    float: left;
+    display: block;
+    color: #000000;
+    /* text-align: center; */
+    padding: 12px 15px;
+    text-decoration: none;
+}
+
+body{
+    
+    background: rgb(255, 255, 255) ;
+    background-attachment: fixed;
+}
+.column{
+    padding: 10px;
+    height: 400px;
+    flex-grow: 1;
+}
+.row{
+    display: flex;
+    padding: 10px;
+    height: 400px;
+}
+.maindiv{
+    margin: 25px 10px 10px 10px;
+    
+}
+section{
+    height: 800px;    
+    text-align: center;
+    flex-wrap: nowrap ;
+    margin: 15px 5px 5px 10px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(200, 200, 200, .97);
+    background: black url("./img/LogoPreview3.png") no-repeat center center;
+    /* box-shadow: 4px 3px rgba(7, 216, 7, .7); */
+    border:  5px double rgba(7, 216, 7, 0.6);
+}
+.iframediv{
+    height: 450px;
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+}
+article{
+    /* display: flex; */
+    height: 450px;
+    text-align: center;
+    flex-wrap: nowrap;
+    margin: 15px 5px 5px 5px;
+    background-color: rgb(200, 200, 200);
+    box-shadow: 4px 3px rgba(7, 216, 7, .7);
+}
+
+aside{
+    float: right;
+    height: 900px;
+    width: 300px;
+    text-align: center;
+    margin: 5px 5px 15px 10px;
+    background-color: white;
+}
+
+footer{
+    clear: both;
+    height: 300px;
+    text-align: center;
+    margin: 25px 5px 5px 5px;
+    background-color: rgba(200, 200, 200, .95);
+}
