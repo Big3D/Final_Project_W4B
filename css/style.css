@@ -1,16 +1,23 @@
 .LogoText{
-    text-align: center;
-    font-family: 'Keania One', cursive;
-    font-size: 45px;
+    align-items: center;
+    align-content: center;
+    justify-content:center;
+    /* font-family: 'Keania One', cursive; */
+    font-family: 'Oswald', sans-serif;
+    font-size: 35px;
 }
 .WelcomeText{
-    /* font-family: 'Medula One', cursive; */
-    font-family: 'Yatra One', cursive;
-    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 25px;
+    border: 1px solid white;
+    margin: 15px, 15px, 15px, 15px;
 }
 
 .navbar{
-    overflow: hidden;
+    display: flex;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 25px;
+    /* overflow: hidden; */
     position: sticky;
     position: -webkit-sticky;
     height: 50px;
@@ -30,23 +37,50 @@
 }
 
 body{
-    
-    background: rgb(255, 255, 255) ;
+    background: black url("./img/LogoPreview3.png") no-repeat center center;
     background-attachment: fixed;
 }
-.column{
-    padding: 10px;
-    height: 400px;
-    flex-grow: 1;
-}
-.row{
+.speechheader{
+    font-family: 'Quicksand', sans-serif;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    color: whitesmoke;
+}
+.speechprompt{
+    font-family: 'Oswald', sans-serif;
+    font-size: 15px;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.15);
+    gap: 10px 10vw;
+    height: 200px;
+    width: 100vw;
+    box-shadow: 2px 5px 10px rgba(7, 216, 7, .7);
+}
+.speechtextwhite{
+    color: whitesmoke;
+}
+.speechbubble{
+    flex: 2 0 25%;
+    align-content: space-around;
+    border-radius: 25px;
+    background: #8013a1;
+    color: whitesmoke;
+    text-align: center;
     padding: 10px;
-    height: 400px;
+    width: 400px;
+    height: 35px;
 }
 .maindiv{
-    margin: 25px 10px 10px 10px;
+    margin: 85px 10px 10px 10px;
     
+}
+
+.cleardiv{
+    height: 300px;
 }
 section{
     height: 800px;    
@@ -54,26 +88,30 @@ section{
     flex-wrap: nowrap ;
     margin: 15px 5px 5px 10px;
     color: rgb(255, 255, 255);
-    background-color: rgba(200, 200, 200, .97);
-    background: black url("./img/LogoPreview3.png") no-repeat center center;
+    /* background-color: rgba(200, 200, 200, .97); */
+    /* background: black url("./img/LogoPreview3.png") no-repeat center center; */
     /* box-shadow: 4px 3px rgba(7, 216, 7, .7); */
-    border:  5px double rgba(7, 216, 7, 0.6);
+    /* border:  5px double rgba(7, 216, 7, 0.6); */
 }
 .iframediv{
     height: 450px;
+    width: 850px;
     display: flex;
-    
+    position: relative;
     align-items: center;
     justify-content: center;
 }
 article{
-    /* display: flex; */
+    display: flex;
+    align-content: center;
+    justify-content: center;
     height: 450px;
-    text-align: center;
-    flex-wrap: nowrap;
-    margin: 15px 5px 5px 5px;
-    background-color: rgb(200, 200, 200);
-    box-shadow: 4px 3px rgba(7, 216, 7, .7);
+    width: 100%;
+    /* text-align: left; */
+    flex-wrap: wrap;
+    margin: 25px 5px 5px 5px;
+    background-color: rgba(0, 0, 0, .7);
+    box-shadow: 2px 5px 10px rgba(7, 216, 7, .7);
 }
 
 aside{
@@ -86,9 +124,57 @@ aside{
 }
 
 footer{
-    clear: both;
-    height: 300px;
+    /* align-items: center; */
+    /* justify-content: center; */
+    height: 100px;
+    width: 100%;
     text-align: center;
-    margin: 25px 5px 5px 5px;
-    background-color: rgba(200, 200, 200, .95);
+    position: absolute ;
+    bottom: 0;
+    color: whitesmoke;
+    margin: 15px 15px 15px 15px;
+    background-color: rgba(0, 0, 0, 0.95);
+}
+#page-container {
+    position: relative;
+    min-height: 20vh;
+}
+  
+#content-wrap {
+    padding-bottom: 0rem;    /* Footer height */
+}
+  
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 10rem;            /* Footer height */
+}
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
 }
